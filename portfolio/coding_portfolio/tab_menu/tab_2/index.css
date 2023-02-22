@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+body {
+  background-color: #111;
+}
+
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center
+}
+
+.inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn {
+  display: block;
+  font: 14px/40px 'inherit';
+  border: 1px solid #cead55;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  background-color: #111;
+}
+
+.content {
+  width: 100%;
+  padding: 100px 0px
+}
+
+.content .title {
+  margin: 0 0 20px 0;
+  font: 36px 'Anton';
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.content .title span {
+  color: #cca959;
+}
+
+.content .txt {
+  margin: 0 0 40px 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+@media screen and (max-width:1200px) {
+  .inner {
+    width: 100%;
+  }
+
+  .content {
+    padding: 100px 40px
+  }
+}
+
+@media screen and (max-width:768px) {
+  .content {
+    padding: 80px 40px
+  }
+}
+
+@media screen and (max-width:640px) {
+  .content {
+    padding: 60px 20px
+  }
+}
+
+#team .tab {
+  position: relative;
+  width: 800px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  background: #111;
+}
+
+#team .tab>li {
+  display: inline-block;
+}
+
+#team .tab>li>a.menu {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 4px solid transparent;
+  transition: 0.3s
+}
+
+#team .tab>li>a.menu img {
+  display: block;
+  width: 100%;
+}
+
+#team .tab>li>a.menu:hover {
+  border-color: #cca959;
+}
+
+#team .tab>li>.pannel {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+
+#team .tab>li>.pannel::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#team .tab>li>.pannel .pic {
+  float: left;
+  width: 200px;
+  opacity: 0;
+  transition: 0.6s 0.2s;
+}
+
+#team .tab>li>.pannel .info {
+  position: relative;
+  float: left;
+  width: calc(100% - 250px);
+  padding: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+#team .tab>li>.pannel .info::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 150px;
+  background: #cca959;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+#team .tab>li>.pannel .info .name {
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  transition: 0.3s 0.2s;
+}
+
+#team .tab>li>.pannel .info .introduce {
+  margin: 10px 0 30px;
+  color: #ddd;
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  transition: 0.3s 0.4s;
+}
+
+#team .tab>li>.pannel .info .schedule {
+  display: inline-block;
+  width: 120px;
+  border: 1px solid #cca959;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  transition: 0.3s 0.6s;
+}
+
+#team .tab>li>.pannel .sns {
+  float: right;
+  margin-top: 25px;
+  width: 50px;
+  height: 140px;
+  opacity: 0;
+  transition: 0.6s 0.2s
+}
+
+#team .tab>li>.pannel .sns li {
+  width: 50px;
+  margin: 20px 5px;
+}
+
+#team .tab>li>.pannel .sns li a {
+  display: block;
+  color: #fff;
+}
+
+#team .tab>li.on>.pannel .pic {
+  opacity: 1;
+}
+
+#team .tab>li.on>.pannel .sns {
+  opacity: 1;
+}
+
+#team .tab>li.on>.pannel .info .name {
+  top: 0;
+  opacity: 1;
+}
+
+#team .tab>li.on>.pannel .info .introduce {
+  top: 0;
+  opacity: 1;
+}
+
+#team .tab>li.on>.pannel .info .schedule {
+  top: 0;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:980px) {
+  #team .tab {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  #team .tab {
+    height: 620px;
+  }
+
+#team .tab>li>.pannel {
+    text-align: center
+  }
+
+  #team .tab>li>.pannel .pic {
+    width: 100%;
+  }
+
+  #team .tab>li>.pannel .info {
+    width: 100%;
+    text-align: center
+  }
+
+  #team .tab>li>.pannel .info::after {
+    display: none
+  }
+
+  #team .tab>li>.pannel .sns {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #team .tab>li>.pannel .sns li {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  #team .tab>li>a.menu {
+    width: 80px;
+    margin: 0 5px;
+  }
+
+  #team .tab>li>.pannel {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #team .tab {
+    height: 740px;
+  }
+
+  #team .tab>li>a.menu {
+    margin: 5px;
+  }
+
+  #team .tab>li>.pannel {
+    top: 200px;
+  }
+}

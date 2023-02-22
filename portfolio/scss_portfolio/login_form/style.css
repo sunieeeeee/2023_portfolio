@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+/* login Form */
+.login {
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.login h1 {
+  margin-top: 0;
+  font-weight: normal;
+  text-align: center;
+  font-size: 28px;
+}
+.login input:not([type=submit]) {
+  display: block;
+  margin: 15px 0;
+  padding: 10px 10px 10px 35px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center left 7px;
+  outline: none;
+  transition: 0.35s;
+}
+.login input:not([type=submit])[type=text] {
+  background-image: url(images/icon_user.svg);
+}
+.login input:not([type=submit])[type=password] {
+  background-image: url(images/icon_password.svg);
+}
+.login input:not([type=submit])[type=email] {
+  background-image: url(images/icon_email.svg);
+}
+.login input:not([type=submit]):hover {
+  border: 1px solid skyblue;
+  box-shadow: 0 0 4px skyblue;
+}
+.login input[type=submit] {
+  padding: 12px;
+  width: 100%;
+  background-color: skyblue;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.login input[type=submit]:hover {
+  background-color: #000;
+}

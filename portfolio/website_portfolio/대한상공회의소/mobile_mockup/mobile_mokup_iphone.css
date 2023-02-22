@@ -1,0 +1,213 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.mockup .mobile_mockup {
+  position: relative;
+  width: 430px;
+  height: 850px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+}
+.mockup .mobile_mockup::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 97.5%;
+  height: 98.5%;
+  border-radius: 27px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.mockup .mobile_mockup .iframe_url {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 400px;
+  height: 680px;
+  border: 1px solid #eee;
+  color: #fff;
+}
+.mockup .mobile_mockup .iframe_url iframe {
+  width: 100%;
+  height: 100%;
+}
+.mockup .mobile_mockup .camera {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 70px;
+}
+.mockup .mobile_mockup .camera span {
+  position: absolute;
+  background-color: #555;
+}
+.mockup .mobile_mockup .camera span:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 6px;
+  border-radius: 8px;
+}
+.mockup .mobile_mockup .camera span:nth-child(2) {
+  left: 130px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.mockup .mobile_mockup .camera span:nth-child(3) {
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.mockup .mobile_mockup .home_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 85px;
+}
+.mockup .mobile_mockup .home_btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.mockup .mobile_mockup .home_btn span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px #606060;
+}
+.mockup .mobile_mockup .power {
+  position: absolute;
+  top: 87px;
+  right: 0;
+}
+.mockup .mobile_mockup .power span {
+  position: absolute;
+  width: 7px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+}
+.mockup .mobile_mockup .volume {
+  position: absolute;
+  top: 87px;
+  right: 100%;
+  width: 7px;
+  height: 150px;
+}
+.mockup .mobile_mockup .volume span {
+  position: absolute;
+  width: 7px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  transform: rotateY(180deg);
+}
+.mockup .mobile_mockup .volume span:nth-child(1) {
+  top: 0;
+  height: 25px;
+}
+.mockup .mobile_mockup .volume span:nth-child(2) {
+  bottom: 55px;
+}
+.mockup .mobile_mockup .volume span:nth-child(3) {
+  bottom: 0;
+}
+.mockup .mobile_mockup .volume span,
+.mockup .mobile_mockup .power span {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1700px) {
+  .mockup .mobile_mockup {
+    width: 380px;
+    height: 550px;
+  }
+  .mockup .mobile_mockup .iframe_url {
+    width: 350px;
+    height: 420px;
+  }
+  .mockup .mobile_mockup .camera {
+    width: 290px;
+    height: 50px;
+  }
+  .mockup .mobile_mockup .camera span:nth-child(1) {
+    width: 60px;
+    height: 4px;
+    border-radius: 3px;
+  }
+  .mockup .mobile_mockup .camera span:nth-child(2) {
+    left: 90px;
+    width: 10px;
+    height: 10px;
+  }
+  .mockup .mobile_mockup .camera span:nth-child(3) {
+    top: 8px;
+    width: 6px;
+    height: 6px;
+  }
+  .mockup .mobile_mockup .home_btn {
+    bottom: 4px;
+    width: 380px;
+    height: 55px;
+  }
+  .mockup .mobile_mockup .home_btn span {
+    width: 30px;
+    height: 30px;
+  }
+  .mockup .mobile_mockup .home_btn span::before {
+    width: 40px;
+    height: 40px;
+  }
+  .mockup .mobile_mockup .home_btn .power {
+    top: 125px;
+  }
+  .mockup .mobile_mockup .home_btn .power span {
+    width: 4px;
+    height: 30px;
+  }
+  .mockup .mobile_mockup .home_btn .volume {
+    top: 75px;
+    width: 4px;
+    height: 120px;
+  }
+  .mockup .mobile_mockup .home_btn .volume span {
+    width: 4px;
+    height: 30px;
+  }
+  .mockup .mobile_mockup .home_btn .volume span:nth-child(1) {
+    height: 20px;
+  }
+  .mockup .mobile_mockup .home_btn .volume span:nth-child(2) {
+    bottom: 37px;
+  }
+}

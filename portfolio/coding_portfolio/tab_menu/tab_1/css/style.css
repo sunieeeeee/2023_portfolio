@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+a {
+  text-decoration: none
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 0;
+}
+
+.content .inner {
+  width: 1176px;
+  margin: 0 auto
+}
+
+.content .inner::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+@media screen and (max-width:1200px) {
+  .content {
+    padding: 120px 40px;
+  }
+
+  .content .inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .content {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .content {
+    padding: 80px 40px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .content {
+    padding: 60px 20px;
+  }
+}
+
+#interview {
+  background: url('../img/dessert-bg2.jpg') center no-repeat;
+  background-size: cover;
+}
+
+#interview .list {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#interview .list>li {
+  border-bottom: 1px dotted #ddd
+}
+
+#interview .list>li:last-of-type {
+  border: 0
+}
+
+#interview .list>li>a {
+  display: block;
+  padding: 0 30px;
+  font: bold 16px/50px 'inherit';
+  color: #000
+}
+
+#interview .list>li>.txt {
+  display: none;
+  padding: 30px;
+}
+
+#interview .list>li>.txt::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+#interview .list>li>.txt>.pic {
+  float: left;
+  width: 50%
+}
+
+#interview .list>li>.txt>.pic img {
+  width: 100%
+}
+
+#interview .list>li>.txt>.msg {
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+}
+
+#interview .list>li>.txt>.msg>h3 {
+  margin: 0 0 20px;
+  font: bold 20px 'inherit';
+  color: #444;
+}
+
+#interview .list>li>.txt>.msg>p {
+  font-size: 14px;
+  color: #777;
+}
+
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:980px) {
+  #interview .list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  #interview .list {
+    padding: 25px;
+    border-radius: 25px;
+  }
+
+  #interview .list>li>a {
+    padding: 0 25px;
+  }
+
+  #interview .list>li>.txt {
+    padding: 25px;
+  }
+
+  #interview .list>li>.txt>.msg {
+    padding-left: 25px;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+
+  #interview .list>li>.txt>.pic {
+    width: 100%
+  }
+
+  #interview .list>li>.txt>.msg {
+    width: 100%;
+    padding: 25px 0 0;
+  }
+}
